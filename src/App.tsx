@@ -1,9 +1,9 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [dialogContent, setDialogContent] = useState<React.ReactNode>(null);
-  const dialogRef = useRef<HTMLDialogElement>(null);
+  // const [dialogContent, setDialogContent] = useState<React.ReactNode>(null);
+  // const dialogRef = useRef<HTMLDialogElement>(null);
   const [fortune, setFortune] = useState<string | "welcome">("welcome");
   const fortunes = [
     "The stars say: Yes ✨",
@@ -15,14 +15,14 @@ function App() {
     "A change is coming. Prepare yourself 🌪️",
   ];
 
-  function toggleDialog() {
-    if (!dialogRef.current) {
-      return;
-    }
-    dialogRef.current.hasAttribute("open")
-      ? dialogRef.current.close()
-      : dialogRef.current.showModal();
-  }
+  // function toggleDialog() {
+  //   if (!dialogRef.current) {
+  //     return;
+  //   }
+  //   dialogRef.current.hasAttribute("open")
+  //     ? dialogRef.current.close()
+  //     : dialogRef.current.showModal();
+  // }
 
   const handleTellFortune = (min: number, max: number) => {
     const questionBox = document.getElementById(
