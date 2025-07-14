@@ -1,0 +1,68 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #3e001a, #000);
+  color: #fff;
+  text-align: center;
+  padding-top: 80px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ffccff;
+  text-shadow: 0 0 10px #ff66ff;
+}
+
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  width: 300px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background: #a855f7;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 0 15px #a855f7;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #9333ea;
+  box-shadow: 0 0 25px #9333ea;
+}
+
+.crystal-ball {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #bbf7d0, #7c3aed);
+  border-radius: 50%;
+  margin: 30px auto;
+  box-shadow: 0 0 40px #9333ea;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 25px #9333ea;
+  }
+  50% {
+    box-shadow: 0 0 40px #f0abfc;
+  }
+}
+
+.fortune {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #ffe066;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  min-height: 40px;
+}
